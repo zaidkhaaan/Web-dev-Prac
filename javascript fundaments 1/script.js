@@ -279,10 +279,6 @@ const bill = 275;
 let tip;
 /* Write your code below. Good luck! 🙂 */
    
-/*
-
-const bill = bill<=300 && bill>=50 ? bill*0.25 : bill*0.2;
-*/
 if (bill > 50 && bill <=300){
      tip = 0.15 * bill;
 } else if ( bill > 300){

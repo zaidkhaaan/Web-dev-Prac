@@ -269,11 +269,7 @@ if( day === 'monday'){
 }else{
     console.log('Not a valid day')
 }
-
-
-
-
-
+// this is to check on git 
 
 
 

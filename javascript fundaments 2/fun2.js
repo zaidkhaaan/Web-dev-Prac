@@ -179,8 +179,11 @@ console.log(fruitProcessor(2,3));
 
 
 
+
 // V 37 Dunctions review 
 
+
+/*
 const callage = function (birthyear){
     return 2037 - birthyear;
 }
@@ -202,7 +205,16 @@ const yearsuntilretire = ( birthyear , firstname) => {
  console.log(yearsuntilretire(1950 ,'Mike'));
 
 
+*/
 
+// Challenge
+
+
+
+// arrays in js
+
+const friends = ['Micheal' , 'Steven', 'Peter'];
+console.log(friends);
 
 
 

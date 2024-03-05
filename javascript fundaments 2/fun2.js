@@ -213,18 +213,86 @@ const yearsuntilretire = ( birthyear , firstname) => {
 
 // arrays in js
 
-const friends = ['Micheal' , 'Steven', 'Peter'];
+// const friends = ['Micheal' , 'Steven', 'Peter'];
+// console.log(friends);
+
+// const years = new Array (1991, 1984, 2008, 2020);
+
+// console.log(friends[0]);
+//console.log(years);
+
+
+// console.log(friends.length);
+// friends[2] ='JAY';
+// console.log(friends);
+
+// const firstname ='jonas';
+// const jonas = [firstname , 'pathan', 2037-1991, 'teacher', friends];
+//  console.log(jonas);
+// console.log(jonas.length);
+    
+// Excercise
+
+/*
+const calcAge = function (birthyear){
+
+return 2037 - birthyear;
+}
+
+
+const yearss = [1990, 1967,2002,2010,2018];
+const age1 = calcAge(yearss[0]);
+const age2 = calcAge(yearss[1]);
+const age3 = calcAge(yearss[yearss.length-1]);
+
+console.log(age1,age2,age3);
+
+const ages = [calcAge(yearss[0]) ,calcAge(yearss[1]) ,calcAge( yearss[yearss.length-1])];
+console.log(ages);
+*/
+
+// v 40 basic array operations 
+
+const friends = ['Micheal' ,'Steven', 'Peter'];
+
+ // friends.push('Jay');
 console.log(friends);
 
+const newlength = friends.push('Jay');
+console.log(newlength);
 
 
+friends.unshift('John');
+console.log(friends);
+
+// Remove Elements 
+
+friends.pop();
+
+const popped = friends.pop();
+console.log(popped);
+
+console.log(friends);
+
+friends.shift(); // to add elements in an array 
+console.log(friends);
+
+console.log(friends.indexOf('Steven'));
+ // prints the index of the elemenyt
+
+ console.log(friends.indexOf('Bob'));
+
+ // prints -1 for the element which is not present in the array 
+
+ console.log(friends.includes('Bob'));
+
+ // returns boolean expression as true or false for the element present in the array
 
 
+ if (friends.includes('Steven')){
 
-
-
-
-
-
+ console.log('You have a friend called steven');
+ }
+ 
 
 

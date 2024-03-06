@@ -293,6 +293,122 @@ console.log(friends.indexOf('Steven'));
 
  console.log('You have a friend called steven');
  }
+
+ // Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+
+// 
+
+/*
+const calAge = function(birthYear){
+    return 2037 - birthYear;
+};
+
+//console.log(calAge(1990));
+
+const yearsuntilretirement = function (birthYear , firstName){
+    const age = calAge(birthYear) ;
+    const retirement = 65- age;
+    if (retirement > 0){
+        console.log(` ${firstName}  retires in  ${retirement} years `);
+        return retirement
+    }else{
+        console.log(`${firstName} has already retired `);
+        return -1 ;
+    }
+     
+    
+}
+
+console.log(yearsuntilretirement(1991,'Jonas'));
+console.log(yearsuntilretirement(1951,'Jonas'));
+
+*/
+
+
+/*
+const calAge = function(birthYear) {
+    return 2037 - birthYear;
+};
+
+const yearsuntilretirement = function (birthYear, firstName) {
+    const age = calAge(birthYear);
+    const retirement = 65 - age;
+    if (retirement > 0) {
+        console.log(`${firstName} retires in ${retirement} years`);
+        return retirement;
+    } else {
+        console.log(`${firstName} has already retired`);
+        return -1;
+    }
+};
+
+console.log(yearsuntilretirement(1991, 'Jonas'));
+console.log(yearsuntilretirement(1951, 'Jonas'));
+*/
+
+/*
+const calAverage= (a,b,c) => (a+b+c)/3;
+//console.log(calAverage(1,2,3));
+
+let scoreDolphins  = calAverage(44,23,71);
+let scoreKoalas  = calAverage(65,54,49);
+
+console.log(scoreDolphins , scoreKoalas);
+
+const checkWinner = function (avgDolphins , avgKoalas){
+    if (avgDolphins >= 2 * avgKoalas){
+        console.log(`Dolphins Wins(${avgDolphins} vs. ${avgKoalas})`);
+    }
+        else if (avgKoalas >= 2*avgDolphins ){
+            console.log(`Koalas Wins(${avgKoalas} vs. ${avgDolphins})`);
+        }else{
+            console.log(`No team wins ...`)
+        }
+    }
+    
+   // checkWinner (scoreDolphins , scoreKoalas);
+   checkWinner (576 , 111);
+   
+   scoreDolphins = calAverage (85,54,41);
+   scoreKoalas = calAverage(23,34,27);
+   
+   console.log(scoreDolphins , scoreKoalas);
+   console.log(scoreDolphins , scoreKoalas);
+
+
+
+
+
+
+
+
+
+
+/* Write your code below. Good luck! 🙂 */
+
+
+/*
+const calcTip = function (bill) {
+
+if (bill <= 300 && bill>=50 ){
+
+return 0.15*bill;
+    
+}else{
+    return 0.20*a;
+}
+}
+
+const bills=[125,555,44];
+
+
+console.log(calcTip(bills));
+*/
+
+
+
  
 
 

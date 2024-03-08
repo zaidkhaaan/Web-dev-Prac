@@ -407,8 +407,32 @@ const bills=[125,555,44];
 console.log(calcTip(bills));
 */
 
-
+  
 
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

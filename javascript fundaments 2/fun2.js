@@ -409,7 +409,190 @@ console.log(calcTip(bills));
 
   
 
- 
+ // Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+//console.log("Try programiz.pro");
+const jonas = {
+    firstName : 'Jonas',
+    lastName : 'Schmedtmann',
+    age :  2037 - 1991,
+    job : 'Teacher',
+    friends : ['Micheal','Peter','Steven']
+}
+
+
+console.log (jonas);
+//console.log(jonas.lastName);
+//console.log(jonas['lastName']);
+
+const nameKey = 'Name';
+
+
+console.log(jonas ['first'+ nameKey]);
+
+console.log(jonas ['last'+ nameKey]);
+
+const interestedIn = prompt('What do you want to know about Jonas ? Chosse between firstName , lastName, age , job , and friends');
+
+//console.log(jonas[interestedIn]);
+
+if(jonas[interestedIn]){
+    console.log(jonas[interestedIn])
+}else{
+    console.log('Wrong Answer !Chosse between firstName ,lastName,age,job,friends');
+}
+
+jonas.location = 'Portugal';
+jonas['Twitter']= '@jonas';
+
+console.log (jonas);
+
+
+console.log(`${jonas.firstName} has ${jonas.friends.length} friends , and his bestf is called ${jonas.friends[0]}`);
+
+
+
+
+
+
+// lec 44
+
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+//console.log("Try programiz.pro");
+
+
+
+// lec 43
+
+
+// const jonas = {
+//     firstName : 'Jonas',
+//     lastName : 'Schmedtmann',
+//     age :  2037 - 1991,
+//     job : 'Teacher',
+//     friends : ['Micheal','Peter','Steven']
+// }
+
+
+// console.log (jonas);
+// //console.log(jonas.lastName);
+// //console.log(jonas['lastName']);
+
+// const nameKey = 'Name';
+
+
+// console.log(jonas ['first'+ nameKey]);
+
+// console.log(jonas ['last'+ nameKey]);
+
+// const interestedIn = prompt('What do you want to know about Jonas ? Chosse between firstName , lastName, age , job , and friends');
+
+// //console.log(jonas[interestedIn]);
+
+// if(jonas[interestedIn]){
+//     console.log(jonas[interestedIn])
+// }else{
+//     console.log('Wrong Answer !Chosse between firstName ,lastName,age,job,friends');
+// }
+
+// jonas.location = 'Portugal';
+// jonas['Twitter']= '@jonas';
+
+// console.log (jonas);
+
+
+// console.log(`${jonas.firstName} has ${jonas.friends.length} friends , and his bestf is called ${jonas.friends[0]}`);
+
+
+
+
+
+// lecture 44
+// . operator in js 
+
+const jonas = {
+    firstName : 'Jonas',
+    lastName : 'Schmedtmann',
+    age :  2037 - 1991,
+    job : 'Teacher',
+    friends : ['Micheal','Peter','Steven'],
+    hasDriversLicense :true,
+    
+    
+    // calAge : function (birthYear) {
+    //     return 2037 - birthYear;
+    // }
+    
+    
+    
+    // calAge : function () {
+    //     console.log(this);
+    //     return 2037 - jonas.birthYear;
+    // }
+    
+    
+    calAge: function (){
+        this.age  = 2037 - this.birthYear;
+        return this.age;
+    }
+    
+    
+    getSummary: function (){
+        return `${this.function} is a ${this.calAge()} - years old ${jonas.job} , and he has ${this.hasDriversLicense ? 'a' : 'no' } driver's license .`}
+        
+    };
+    
+
+console.log (jonas.calAge());//  object jonas calling the method 
+
+console.log (jonas.age);
+console.log (jonas.age);
+console.log (jonas.age);
+
+
+
+
+//console.log(jonas['calAge(1991']);
+
+
+
+// Challenge 
+// "Jonas is 46 - year old teacher , and he has a drivers license "
+
+console.log(jonas.getSummary());{
+  
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -252,6 +252,7 @@ console.log(ages);
 */
 
 // v 40 basic array operations 
+/*
 
 const friends = ['Micheal' ,'Steven', 'Peter'];
 
@@ -413,60 +414,6 @@ console.log(calcTip(bills));
 // Write, Edit and Run your Javascript code using JS Online Compiler
 
 //console.log("Try programiz.pro");
-const jonas = {
-    firstName : 'Jonas',
-    lastName : 'Schmedtmann',
-    age :  2037 - 1991,
-    job : 'Teacher',
-    friends : ['Micheal','Peter','Steven']
-}
-
-
-console.log (jonas);
-//console.log(jonas.lastName);
-//console.log(jonas['lastName']);
-
-const nameKey = 'Name';
-
-
-console.log(jonas ['first'+ nameKey]);
-
-console.log(jonas ['last'+ nameKey]);
-
-const interestedIn = prompt('What do you want to know about Jonas ? Chosse between firstName , lastName, age , job , and friends');
-
-//console.log(jonas[interestedIn]);
-
-if(jonas[interestedIn]){
-    console.log(jonas[interestedIn])
-}else{
-    console.log('Wrong Answer !Chosse between firstName ,lastName,age,job,friends');
-}
-
-jonas.location = 'Portugal';
-jonas['Twitter']= '@jonas';
-
-console.log (jonas);
-
-
-console.log(`${jonas.firstName} has ${jonas.friends.length} friends , and his bestf is called ${jonas.friends[0]}`);
-
-
-
-
-
-
-// lec 44
-
-// Online Javascript Editor for free
-// Write, Edit and Run your Javascript code using JS Online Compiler
-
-//console.log("Try programiz.pro");
-
-
-
-// lec 43
-
 
 // const jonas = {
 //     firstName : 'Jonas',
@@ -478,33 +425,63 @@ console.log(`${jonas.firstName} has ${jonas.friends.length} friends , and his be
 
 
 // console.log (jonas);
-// //console.log(jonas.lastName);
-// //console.log(jonas['lastName']);
+// console.log(jonas.lastName); // jonas is an object calling lastName
+// console.log(jonas['lastName']); // calling lastName using jonas object from [bracket notation]
 
 // const nameKey = 'Name';
 
 
 // console.log(jonas ['first'+ nameKey]);
-
 // console.log(jonas ['last'+ nameKey]);
 
-// const interestedIn = prompt('What do you want to know about Jonas ? Chosse between firstName , lastName, age , job , and friends');
 
-// //console.log(jonas[interestedIn]);
-
-// if(jonas[interestedIn]){
-//     console.log(jonas[interestedIn])
-// }else{
-//     console.log('Wrong Answer !Chosse between firstName ,lastName,age,job,friends');
-// }
-
-// jonas.location = 'Portugal';
-// jonas['Twitter']= '@jonas';
-
-// console.log (jonas);
+// cannot acces object using --->>> console.log([jonas.'last' +namekey])
 
 
-// console.log(`${jonas.firstName} has ${jonas.friends.length} friends , and his bestf is called ${jonas.friends[0]}`);
+// when can we use bracket or . notation 
+/*
+Answer :- when we need to compute the property name ---> (first and last name) --> [] bracket notation
+in other case use . notation .
+*/
+
+
+
+/*
+ const interestedIn = prompt('What do you want to know about Jonas ? Chosse between firstName , lastName, age , job , and friends');
+
+console.log(jonas[interestedIn]);
+
+if(jonas[interestedIn]){
+     console.log(jonas[interestedIn])
+ }else{
+     console.log('Wrong Answer !Chosse between firstName ,lastName,age,job,friends');
+ }
+
+jonas.location = 'Portugal'; // to add new properties in an object using . operator
+jonas['Twitter']= '@jonas'; // to add new property using [] operator 
+
+console.log (jonas);
+
+*/
+
+
+ //console.log(`${jonas.firstName} has ${jonas.friends.length} friends , and his bestf is called ${jonas.friends[0]}`);
+
+
+
+
+
+
+
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+//console.log("Try programiz.pro");
+
+
+
+// lec 43
+
 
 
 
@@ -516,7 +493,7 @@ console.log(`${jonas.firstName} has ${jonas.friends.length} friends , and his be
 const jonas = {
     firstName : 'Jonas',
     lastName : 'Schmedtmann',
-    age :  2037 - 1991,
+    birthYear :  1991,
     job : 'Teacher',
     friends : ['Micheal','Peter','Steven'],
     hasDriversLicense :true,
@@ -524,8 +501,47 @@ const jonas = {
     
     // calAge : function (birthYear) {
     //     return 2037 - birthYear;
+    //      we find function expression to create this method 
+    //     any function that is attachted to an object is called method 
+
     // }
+
+
+
+    // calAge : function (){
+    //     console.log(this); // this will point towards jonas 
+    //     return 2037- this.birthYear;
+    // }
+    // 'this' is equal to the object on which the method is called 
     
+    
+    calAge: function (){
+        this.age  = 2037 - this.birthYear;
+        return this.age;
+    } ,
+        
+    getSummary: function() {
+        return `${this.firstName} is a ${this.calAge()} - years old ${jonas.job} , and he has ${this.hasDriversLicense ? 'a' : 'no' } 
+        driver's license .`}
+
+    
+       
+    
+
+    }; 
+
+    console.log (jonas.calAge());//  object jonas calling the method 
+    console.log (jonas.age);
+    console.log (jonas.age);
+    console.log (jonas.age);
+
+
+   //  console.log(jonas.calAge());
+
+     // whatever appears before the dot is the one who is calling the method 
+
+    // console.log(jonas['calAge'](1991)); // need to pass only in string while using [] function
+
     
     
     // calAge : function () {
@@ -533,39 +549,15 @@ const jonas = {
     //     return 2037 - jonas.birthYear;
     // }
     
-    
-    calAge: function (){
-        this.age  = 2037 - this.birthYear;
-        return this.age;
-    }
+  
     
     
-    getSummary: function (){
-        return `${this.function} is a ${this.calAge()} - years old ${jonas.job} , and he has ${this.hasDriversLicense ? 'a' : 'no' } driver's license .`}
-        
-    };
-    
-
-console.log (jonas.calAge());//  object jonas calling the method 
-
-console.log (jonas.age);
-console.log (jonas.age);
-console.log (jonas.age);
-
-
-
-
-//console.log(jonas['calAge(1991']);
-
 
 
 // Challenge 
 // "Jonas is 46 - year old teacher , and he has a drivers license "
 
-console.log(jonas.getSummary());{
-  
-    
-}
+  console.log(jonas.getSummary());
 
 
 

@@ -275,19 +275,20 @@ if( day === 'monday'){
 
 */
 
-const bill = 275;
-let tip;
-/* Write your code below. Good luck! 🙂 */
+// const bill = 275;
+// let tip;
+// /* Write your code below. Good luck! 🙂 */
    
-if (bill > 50 && bill <=300){
-     tip = 0.15 * bill;
-} else if ( bill > 300){
-     tip = 0.20 * bill;
-}
+// if (bill > 50 && bill <=300){
+//      tip = 0.15 * bill;
+// } else if ( bill > 300){
+//      tip = 0.20 * bill;
+// }
 
-let billamount;
-billamount = bill+tip;
-console.log("The bill was" &{bill}, "the tip was" &(tip), "and the total value" &{billamount} );
+// let billamount;
+// billamount = bill+tip;
+// console.log("The bill was" &{bill}, "the tip was" &(tip), "and the total value" &{billamount} );
+
 
 
 

@@ -139,147 +139,41 @@
 clearInterval();
 
 // primitive types
-// let lastName = 'Williams';
-// let oldLastName = lastName;
-// lastName = 'Devis';
-// console.log(lastName, oldLastName);
+let lastName = 'Williams';
+let oldLastName = lastName;
+lastName = 'Devis';
+console.log(lastName, oldLastName);
 
-// // refernce variable
+// refernce variable
 
-// const jessica = {
-//   firstName: 'Jessica',
-//   lastName: 'Williams',
-//   age: 27,
-// };
+const jessica = {
+  firstName: 'Jessica',
+  lastName: 'Williams',
+  age: 27,
+};
 
-// const marriedJessica = jessica;
-// marriedJessica.lastName = 'Davis';
-// console.log('Before Marriage :', jessica);
-// console.log('After Marriage', jessica);
+const marriedJessica = jessica;
+marriedJessica.lastName = 'Davis';
+console.log('Before Marriage :', jessica);
+console.log('After Marriage', jessica);
 
-// const jessica2 = {
-//   firstName: 'Jessica',
-//   lastName: 'Williams',
-//   age: 27,
-//   family: ['Alice', 'Bob'],
-// };
+const jessica2 = {
+  firstName: 'Jessica',
+  lastName: 'Williams',
+  age: 27,
+  family: ['Alice', 'Bob'],
+};
 
 // shallow copy using object . assign
 
-// const jessicacopy = Object.assign({}, jessica2);
-// jessicacopy.lastName = 'Davis';
+const jessicacopy = Object.assign({}, jessica2);
+jessicacopy.lastName = 'Davis';
 
-// console.log('Before marriage', jessica2);
-// console.log('After Marriage', jessicacopy);
+console.log('Before marriage', jessica2);
+console.log('After Marriage', jessicacopy);
 
-// jessicacopy.family.push('Mary');
-// jessicacopy.family.push('John');
+jessicacopy.family.push('Mary');
+jessicacopy.family.push('John');
 
-// console.log('Before Marriage', jessica2);
-// console.log('After Marriage', jessicacopy);
-
-// functions
-
-// const flight = 'LH123';
-
-// const jonas = {
-//   name: 'Jonas Schmedtmann',
-//   passport: 2412345,
-// };
-
-// const checkIn = function (flightNum, passenger) {
-//   flightNum = 'LH999';
-//   passenger.name = 'Mr.' + passenger.name;
-
-//   if (passenger.passport === 2412345) {
-//     alert('Checked In');
-//   } else {
-//     alert('Wrong passport');
-//   }
-// };
-
-// checkIn(flight, jonas);
-// // console.log(flight);
-// console.log(jonas);
-
-// getName();
-// console.log(x);
-// console.log(getName);
-
-// var x = 7;
-
-// function getName() {
-//   console.log('Namaste Javascript');
-// }
-
-// const age = 23;
-// const name = 'zaid';
-
-// function greet(age, name) {
-//   console.log(`Hey your name is ${name} and age is ${age}`);
-// }
-
-// greet(age, name);
-
-// let user = {
-//   name: 'harkirat',
-//   age: 19,
-//   gender: 'Male',
-// };
-// function greet(user) {
-//   console.log(`Hi Mr ${user.name},${user.age}, and ${user.gender}`);
-
-//   if (user.age >= 18) {
-//     console.log('You can vote');
-//   } else {
-//     console.log('You cannot');
-//   }
-// }
-// greet(user);
-
-// const arr = [1, 2, 3, 4, 5, 6];
-
-// function isEVEN(number) {
-//   return number % 2 == 0;
-// }
-
-// const EvenNumber = arr.filter(isEVEN);
-
-// console.log(EvenNumber);
-
-const users = [
-  {
-    name: 'Harkirat',
-    age: 21,
-    Gender: 'F',
-  },
-  {
-    name: 'ZJP',
-    age: 19,
-    Gender: 'M',
-  },
-  {
-    name: 'ZAIN',
-    age: 17,
-    Gender: 'M',
-  },
-];
-
-function lol(users) {
-  users.forEach(users => {
-    if (users.age >= 18 && users.Gender === 'M') {
-      console.log(users);
-    }
-  });
-}
-
-console.log(lol(users));
-lol(users);
-/*
-function lol(users) {
-  users.forEach(user => {
-    if (user.age >= 18) {
-      console.log(user);
-    }
-  });
-*/
+console.log('Before Marriage', jessica2);
+console.log('After Marriage', jessicacopy);

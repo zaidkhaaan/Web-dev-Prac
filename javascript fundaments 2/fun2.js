@@ -20,18 +20,18 @@ if(hasdriversLicense) console.log ('I can Drive :D'); ``
 // logger();
 // logger();
 
-function fruitProcessor(apples, oranges) {
-  // console.log(apples,oranges);
-  const juice = ` Juice with  ${apples} apples and ${oranges} oranges.`;
-  return juice;
-}
+// function fruitProcessor(apples, oranges) {
+//   // console.log(apples,oranges);
+//   const juice = ` Juice with  ${apples} apples and ${oranges} oranges.`;
+//   return juice;
+// }
 
-//  ``
+// //  ``
 
-const applejuice = fruitProcessor(5, 0);
-console.log(applejuice);
-console.log(fruitProcessor(5, 0));
-const num = Number('23');
+// const applejuice = fruitProcessor(5, 0);
+// console.log(applejuice);
+// console.log(fruitProcessor(5, 0));
+// const num = Number('23');
 
 /* his line is doing the same thing as the previous line,
  but it’s also storing the result in a variable called applejuice. 
@@ -679,13 +679,13 @@ const john = {
 
 // 47
 
-const jonas = [
-  'Jonas',
-  'Schmedtmann',
-  2037 - 1991,
-  'Teacher',
-  ['Micheal', 'Peter', 'Steven'],
-];
+// const jonas = [
+//   'Jonas',
+//   'Schmedtmann',
+//   2037 - 1991,
+//   'Teacher',
+//   ['Micheal', 'Peter', 'Steven'],
+// ];
 
 // for (let i = jonas.length-1 ;i >=0 ;i--){
 //     console.log(jonas[i]);
@@ -754,7 +754,7 @@ console.log(bills,tips,totals);
 // }
 
 // console.log(calAverage([1,2,3]));
-console.log(23);
+// console.log(23);
 
 // calAge : function (birthYear) {
 //     return 2037 - birthYear;
@@ -800,3 +800,41 @@ console.log(23);
 // "Jonas is 46 - year old teacher , and he has a drivers license "
 
 //   console.log(jonas.getSummary());
+
+// function callback() {
+//   console.log('5 seconds have passed');
+// }
+
+// let p = setTimeoutPromisified(5000);
+// console.log(p);
+
+// function x1() {
+//   //   var i = 1;
+//   for (let i = 0; i <= 5; i++) {
+//     setTimeout(function () {
+//       console.log(i);
+//     }, i * 1000);
+//   }
+//   //   setTimeout(function () {
+//   //     console.log(i);
+//   //   }, 3000);
+//   console.log('Namaste Javascript');
+// }
+// x1();
+
+// function statement
+
+a();
+b();
+
+function a() {
+  console.log('a called');
+}
+
+// function expression
+
+var b = function () {
+  console.log('b called');
+};
+
+b();
